@@ -1,0 +1,81 @@
+Algo batailleNavale1
+# Projet fil rouge de la bataile navale
+
+Variable caseEnnemi1: chaîne <- "A2"
+Variable caseEnnemi2: chaîne <- "B2"
+Variable caseEnnemi3: chaîne <- "C2"
+
+Variable joueur : caractère[3]
+joueur[0] <- "A1"
+joueur[1] <- "A2"
+joueur[2] <- "A3"
+
+Variable ennemi : caractère[3]
+ennemi[0] <- "B1"
+ennemi[1] <- "B2"
+ennemi[2] <- "B3"
+
+Variable tir : chaîne
+
+Variable touche : booléen
+
+Début 
+    Répéter 
+
+        # ------ Mon tir -------
+        touche <- Faux
+        tir <- saisir("Où allez-vous tirer?")
+        Pour i <- 0 à 2
+            Si ennemi[i]  = tir Alors 
+              
+                ennemi[i] <- "touche"
+                touche <- Vrai
+
+            FSi
+        FPour
+
+        # -------Affichage du résultat --------
+        écrire("Vous avez tiré en " & tir & "....plouf")
+        Si touche = Vrai Alors 
+            écrire (" touché !")
+        Sinon 
+            écrire (" plouf...")
+        FSi
+
+
+        # ------ Tir ennemi -------
+        touche <- Faux
+        tir <- saisir("Où l'ennemi va-t-il tirer?")
+        Pour i <- 0 à 2
+            Si joueur[i]  = tir Alors 
+              
+                joueur[i] <- "touche"
+                touche <- Vrai
+
+            FSi
+        FPour
+
+        # -------Affichage du résultat --------
+        écrire("L'ennemi en " & tir & "....")
+        Si touche = Vrai Alors 
+            écrire (" touché !")
+        Sinon 
+            écrire (" plouf...")
+        FSi
+
+    TantQue (joueur[0] <> "touche" ET joueur[1] <> "touche" ET joueur[2] <> "touche") ou (ennemi[0] <> "touche" ET ennemi[1] <> "touche" ET ennemi[2] <> "touche") 
+    FRépéter
+
+    # ------- Message final --------
+
+    Si joueur[0] - "touche" ET joueur[1] - "touche" ET joueur[2] - "touche" ET ennemi[0] - "touche" ET ennemi[1] - "touche" ET ennemi[2] - "touche" Alors
+        écrire("Égalité")
+    Sinon
+        Si joueur[0] <> "touche" ET joueur[1] <> "touche" ET joueur[2] <> "touche"
+            écrire("L'ennemi gagne")
+        Sinon 
+            écrire("Le joueur gagne")
+        FSi
+    FSi
+
+Fin

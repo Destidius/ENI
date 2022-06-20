@@ -1,0 +1,12 @@
+package fr.eni.demonstration;
+
+public class Demonstration {
+
+	enum Couleurs { VERT ,JAUNE, ORANGE, ROUGE};
+	
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

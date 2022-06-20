@@ -1,0 +1,23 @@
+package fr.eni.tpmax;
+
+public class TpMax {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static float compare(float a, float b)
+	{
+		if (a > b) 
+		{
+			return a;
+		}
+		else 
+		{
+			return b;
+		}
+		
+		
+	}
+
+}

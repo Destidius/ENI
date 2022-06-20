@@ -1,0 +1,19 @@
+package fr.eni.demonstration;
+
+public class Demonstration {
+
+	public static void main(String[] args) 
+	{
+		
+		int compteur = 1;
+		
+		while(compteur <= 5)
+		{
+			System.out.println("Bonjour");
+			System.out.println(compteur); 
+		}
+		
+
+	}
+
+}

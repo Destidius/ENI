@@ -1,0 +1,21 @@
+package fr.eni.demonstration;
+
+import java.util.Arrays;
+
+public class Demonstration {
+
+	public static void main(String[] args) 
+	{
+		int[] tab;
+		tab = new int[10];
+		
+		Arrays.fill(tab, 6);
+		
+		System.out.println(Arrays. toString(tab));
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package fr.eni.desmonstration;
+
+import java.util.Arrays;
+
+public class Demonstration {
+
+	public static void main(String[] args) 
+	{
+		String ch1 = "une chaine";
+		String ch2 = new String("encore une chaine");
+		
+		char[] ch3 = new char[5];
+		char[] ch4 = {'M','A','R','D','I'};
+		
+		System.out.println("valeur de la chaine : " + ch1);
+		
+		System.out.println("ch4 : " + Arrays.toString(ch4));
+		
+		String ch5 = new String(ch4);
+		
+		System.out.println(ch5);
+		
+		String ch7 = "azerty";
+		
+		String ch8 = "qwerty";
+		
+		System.out.println(ch7.equalsIgnoreCase(ch8));
+		
+		
+
+	}
+
+}

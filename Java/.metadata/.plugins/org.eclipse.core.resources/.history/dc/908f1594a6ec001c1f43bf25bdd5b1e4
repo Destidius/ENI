@@ -1,0 +1,13 @@
+package fr.eni.demonstration;
+
+public class Demonstration {
+
+	public static void main(String[] args) 
+	{
+		 byte unByte = 100;
+		 
+		 short unShort = unByte;
+		
+	}
+
+}

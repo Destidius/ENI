@@ -1,0 +1,31 @@
+package fr.eni.tpaquaponey;
+
+import java.util.Scanner;
+
+public class TpAquaPoney {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int avancer = 0;
+		do {
+			System.out.println("#############");
+			System.out.println("#");
+			espaceAvant(avancer);
+			System.out.println("o");
+			espaceApres(avancer);
+			System.out.println("#");
+			System.out.println("#############");
+			avancer++;
+			sc.nextLine();
+			} while(avancer!=9);
+			System.out.println("Fin !");
+	}
+	public static void espaceAvant(int avancer) {
+		for (int i=0 ; i<avancer ; i++)
+			System.out.println("0");
+	}
+	public static void espaceApres(int avancer){
+		int espace=9 -avancer;
+		for (int i=0 ; i<espace ; i++)
+			System.out.println(" ");
+	}
+}

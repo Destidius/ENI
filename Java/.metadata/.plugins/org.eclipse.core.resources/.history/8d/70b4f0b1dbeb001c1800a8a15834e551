@@ -1,0 +1,30 @@
+package fr.eni.demonstration;
+
+import java.util.Scanner;
+
+public class Demonstration {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("#########################");
+		System.out.println("Bienvenue");
+		System.out.println("#########################");
+
+		System.out.println("#########################");
+		System.out.println("Demande de saisie :");
+		System.out.println("#########################");
+
+		System.out.println("Veuillez faire un choix :");
+		System.out.println("1 - Afficher 10 fois bonjour");
+		System.out.println("2 - Afficher les 10 premiers nombres pairs");
+		System.out.println("3- Afficher des couleurs");
+		System.out.println("Veuillez faire un choix :");
+		
+		Scanner scanner = new Scanner(System.setIn);
+		
+		
+		
+		
+	}
+
+}

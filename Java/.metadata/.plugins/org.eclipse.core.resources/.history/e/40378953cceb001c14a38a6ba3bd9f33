@@ -1,0 +1,12 @@
+package fr.eni.cuisson;
+
+import java.util.Scanner;
+
+public class Cuisson {
+
+	public static void main(String[] args) 
+	{
+		
+		
+		
+	}

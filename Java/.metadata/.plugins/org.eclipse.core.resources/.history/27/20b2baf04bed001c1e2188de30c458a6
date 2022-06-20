@@ -1,0 +1,40 @@
+package fr.eni.tpmelangeurdemot;
+
+public class TpMelangeurDeMot2 {
+
+	public static void main(String[] args) 
+	{
+		String mot = "Bonjour";
+		// mot une fois melange
+		String motMelange = "";
+		// transforme la chaine de car. en tableau de car.
+		char[] tabChar = mot.toCharArray();
+		
+		int nbLettre = tabChar.length;
+		// créer le tableau de destination
+		char[] tabChar2 = new char[nbLettre];
+		// etape 1 copie la premiere lettre
+		tabChar2[0] = tabChar[0];
+		// etape 2 copie la derniere lettre
+		tabChar2[nbLettre-1] = tabChar[nbLettre-1];
+		//------------------------------------------
+		// on parcours les lettres du milieu
+		for (int i=1; i< tabChar.length -1; i++) {
+			// objectif de mettre la lettre dans tabChar2
+			char l = tabChar[i];
+			// defini la ligne avant derniere
+			int indiceAvantDernier = nbLettre-2;
+			// genere le nb alea de 1 a 5
+			alea =r.nextInt(indiceAvantDernier) + 1;
+			System.out.println(alea);
+			tabChar2[alea] = l;
+		}
+		
+		for (char c : tabChar2) {
+			motMelange += c;
+		}
+		
+		System.out.println(motMelange);
+		
+		}
+}

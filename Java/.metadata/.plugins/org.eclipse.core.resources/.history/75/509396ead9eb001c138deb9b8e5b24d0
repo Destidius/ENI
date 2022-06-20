@@ -1,0 +1,77 @@
+package fr.eni.cuisson;
+
+import java.util.Scanner;
+
+public class InstructionsCuisson {
+	
+	static final int BOEUF = 1;
+	static final int PORC = 2;
+	
+	static final int BLEU = 1;
+	static final int APOINT = 2;
+	static final int BIENCUIT = 3;
+
+	public static void main(String[] args) 
+	{
+		int instructionsCuisson = 0;
+		
+		System.out.println("Type de viande ? :");
+		System.out.println("1 = Boeuf, 2 = Porc");
+		
+		int typeViande = saisirInt();
+		
+		System.out.println("Type de Cuisson ? :");
+		System.out.println("1 = BLEU, 2 = À POINT, 3 = BIEN CUIT");
+		
+		int typeCuisson = saisirInt();
+		
+		System.out.println("Poids en gramme de la viande ? :");
+		
+		int poids = saisirInt();
+		
+		if(typeViande == BOEUF)
+		{
+			switch(typeCuisson)
+			{
+			case BLEU:
+				instructionsCuisson = (int)(poids * 10 / 500f * 60);break;
+			
+			case APOINT:
+				instructionsCuisson = (int)(poids * 17 / 500f * 60);break;
+			
+			case BIENCUIT:
+				instructionsCuisson = (int)(poids * 25 / 500f * 60);break;
+			
+			default:
+				System.out.println("Erreur");
+			}
+		}
+		else if(typeViande == PORC)
+		{ 
+			switch(typeCuisson)
+			{
+			case BLEU:
+				instructionsCuisson = (int)(poids * 15 / 400f * 60);break;
+			
+			case APOINT:
+				instructionsCuisson = (int)(poids * 25 / 400f * 60);break;
+			
+			case BIENCUIT:
+				instructionsCuisson = (int)(poids * 40 / 400f * 60);break;
+			
+			default:
+				System.out.println("Erreur");
+			}
+		}
+		else System.out.println("Erreur");
+		
+		if(instructionsCuisson > 0) System.out.println("Il faut " + instructionsCuisson + " secondes");
+	}
+
+	private static int saisirInt() {
+		Scanner scan = new Scanner(System.in);
+		int result = scan.nextInt();
+		return result;
+	}
+
+}

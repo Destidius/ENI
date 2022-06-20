@@ -1,0 +1,82 @@
+package fr.eni.demonstration;
+
+import java.util.Scanner;
+
+public class Demonstration {
+	
+	public static void afficherInfo(String phrase)
+	{
+		System.out.println("#########################");
+		System.out.println(phrase);
+		System.out.println("#########################");
+	}
+	
+	public static void afficherBonjour()
+	{
+		afficherInfo("Afficher 10 fois Bonjour");
+		for(int i =0;i<10;i++)
+		{
+			System.out.println("Bonjour");
+		}
+	}
+	
+	public static void afficherPairs()
+	{
+		afficherInfo("Afficher les 10 premiers nombres pairs");
+		int compteur = 0;
+		int i = 0;
+		while(compteur != 10)
+			{
+				if(i%2 == 0)
+				{
+					System.out.println(i);
+					compteur++;
+				}
+				i++;
+			}
+	}
+	
+	public static void afficherCouleurs()
+	{
+		System.out.println("VERT");
+		System.out.println("JAUNE");
+		System.out.println("BLEU");
+		System.out.println("ROUGE");
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		
+		afficherInfo("Bienvenue");
+		
+		afficherInfo("Demande de saisie");
+
+		System.out.println("Veuillez faire un choix :");
+		System.out.println("1 - Afficher 10 fois bonjour");
+		System.out.println("2 - Afficher les 10 premiers nombres pairs");
+		System.out.println("3- Afficher des couleurs");
+		System.out.println("Veuillez faire un choix :");
+		
+		Scanner scanner = new Scanner(System.in);
+		int saisie = scanner.nextInt();
+		
+		
+		if(saisie == 1)
+		{
+			afficherBonjour();
+		}
+		
+		
+		if(saisie == 2)
+		{
+			afficherPairs();
+		}
+
+		if(saisie == 3)
+		{
+			afficherCouleurs();
+		}
+
+}
+}

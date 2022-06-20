@@ -1,0 +1,19 @@
+Algo batailleNavale1
+# Projet fil rouge de la bataile navale
+
+Constante CASE_ENNEMI: chaîne <- "A2"
+Constante CASE_ENNEMI2: chaîne <- "B2"
+Constante CASE_ENNEMI3: chaîne <- "C2"
+
+Début 
+
+    Variable tir: chaîne <- saisir("Où voulez-vous tirer ?")
+
+    Si tir = CASE_ENNEMI OU CASE_ENNEMI2 OU CASE_ENNEMI3 alors
+        écrire ("Case " & tir & " touchée")
+    Sinon 
+        écrire("Plouf")
+    FSi 
+    
+Fin 
+

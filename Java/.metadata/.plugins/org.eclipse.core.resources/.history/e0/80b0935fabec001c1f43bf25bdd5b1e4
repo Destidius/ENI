@@ -1,0 +1,14 @@
+package fr.eni.tpmelangeurdemot;
+
+public class TpMelangeurDeMot {
+
+	public static void main(String[] args) 
+	{
+		String mot = "Bonjour";
+		// transformer string tableau de caractère
+		Char[] tabChar = mot.toCharArray();
+		System.out.println(tabChar);
+		
+	}
+
+}
