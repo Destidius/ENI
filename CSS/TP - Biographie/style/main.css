@@ -1,0 +1,66 @@
+body {
+    background-color: #555;
+    font-family: "Open Sans Condensed",sans-serif;
+    margin: auto;
+    width: 1160px;
+}
+
+#header-logo{
+    float:left;
+}
+
+#header-slogan{
+     float: left;
+    width: 220px;
+    margin: 10px;
+    color:white;
+    font-size:24px;
+    text-shadow: -1px -1px 0 #000,-1px -1px 0 #000,-1px -1px 0 #000,-1px -1px 0 #000;
+}
+
+#header-user{
+    float : right;
+    min-width:300px;
+}
+
+#header-user-infos{
+    margin-top:15px;
+}
+
+#header-user-avatar{
+    float : left;
+    width:75px;
+    margin: 10px;
+}
+
+#header-user-name{
+    color:white;
+     text-shadow: 4px 4px 6px black;   
+}
+main{
+    clear: both;
+    
+}
+#discographie, #membres{
+	float:left;
+	min-height:250px;
+	margin-right:10px;
+}
+#membres{
+    float: center;
+    margin-left: 10px;
+}
+#similaires{
+	clear: both;
+}
+
+article img{
+    float: left;
+    min-height: 200px;
+    margin-right: 15px;
+}
+
+hr{
+	clear:both;
+	margin-top: 15px;
+}
